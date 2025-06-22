@@ -12,7 +12,7 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-body:not(.page-body):not(.contact-body) {
+body:not(.page-body):not(.contact-body):not(.about-body):not(.learnings-body)  {
   background: url("your-photo.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
@@ -151,4 +151,105 @@ body:not(.page-body):not(.contact-body) {
 
 .contact-form button:hover {
   background-color: #dddddd;
+}
+
+.about-body {
+  background: url("about-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+  backdrop-filter: blur(6px);
+}
+
+.about-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-container p {
+  font-size: 17px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-container ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.about-container li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.learnings-body {
+  background: url("learnings-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.learnings-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.learnings-container {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.learnings-container h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.topic {
+  margin-bottom: 30px;
+}
+
+.topic h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.topic p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
