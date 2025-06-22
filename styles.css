@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 * {
   margin: 0;
@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-body:not(.page-body) {
+body:not(.page-body):not(.contact-body) {
   background: url("your-photo.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
@@ -57,7 +58,7 @@ body:not(.page-body) {
 .page-body {
   background-color: #f4f4f4;
   color: #222;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 50px 20px;
 }
 
@@ -77,4 +78,77 @@ body:not(.page-body) {
 
 .back-link:hover {
   text-decoration: underline;
+}
+.contact-body {
+  background: url("contact-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.contact-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.contact-container h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #dddddd;
 }
