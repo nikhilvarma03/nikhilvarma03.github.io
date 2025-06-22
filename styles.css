@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +8,17 @@
 
 body, html {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Background image */
 body {
   background: url("your-photo.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
 
-/* Optional dark overlay */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark layer */
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   display: flex;
@@ -26,29 +26,31 @@ body {
   justify-content: center;
 }
 
-/* Centered content */
 .content {
   text-align: center;
   color: white;
 }
 
 .content h1 {
-  font-size: 48px;
-  margin-bottom: 30px;
+  font-size: 52px;
+  margin-bottom: 40px;
   letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .buttons a {
   text-decoration: none;
-  padding: 12px 24px;
-  margin: 10px;
-  background-color: #ffffff;
-  color: #000;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  padding: 12px 28px;
+  margin: 12px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .buttons a:hover {
-  background-color: #dddddd;
+  background-color: white;
+  color: black;
 }
