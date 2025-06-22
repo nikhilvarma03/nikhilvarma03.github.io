@@ -253,3 +253,81 @@ body:not(.page-body):not(.contact-body):not(.about-body):not(.learnings-body)  {
   line-height: 1.6;
   margin-bottom: 8px;
 }
+
+/* ===== Responsive Layout ===== */
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .buttons a {
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 14px;
+  }
+
+  .about-container,
+  .contact-container,
+  .learnings-container {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .about-container h1,
+  .contact-container h1,
+  .learnings-container h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .topic h2 {
+    font-size: 20px;
+  }
+
+  .about-container p,
+  .contact-info p,
+  .topic p {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .buttons a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .about-container,
+  .contact-container,
+  .learnings-container {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .about-container h1,
+  .contact-container h1,
+  .learnings-container h1 {
+    font-size: 24px;
+  }
+
+  .topic h2 {
+    font-size: 18px;
+  }
+
+  .topic p,
+  .about-container p,
+  .contact-info p {
+    font-size: 14px;
+  }
+}
