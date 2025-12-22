@@ -1,3 +1,3 @@
 # nikhilvarma website
 git tutorial
-My anme is Nikhil Varma I am studying enginneeerign
+My name is Nikhil Varma I am studying engineering
